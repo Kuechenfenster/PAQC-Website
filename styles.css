@@ -501,6 +501,20 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; 
   .fact { grid-template-columns: 72px 1fr; }
 }
 
+/* ---------- additions: copy v3 sections ---------- */
+.pillar p.pillar__tagline {
+  font-family: var(--font-serif); font-style: italic; font-weight: 480;
+  font-size: 1.08rem; color: var(--ink);
+}
+.pillars--two { grid-template-columns: repeat(2, 1fr); }
+.duo__closer { margin-top: 2.2rem; color: var(--slate); max-width: 62ch; }
+.expertise p { max-width: 64ch; color: var(--slate); }
+.mark__item p strong { color: #f2f8fa; font-weight: 600; }
+
+@media (max-width: 1020px) {
+  .pillars--two { grid-template-columns: 1fr; }
+}
+
 /* ---------- motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

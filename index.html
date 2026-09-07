@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAQ-Consultancy Ltd — Precision Compliance for the Next Industrial Era</title>
-  <meta name="description" content="PAQ-Consultancy Ltd: precision-engineered compliance across five practice areas — consumer products, AIG/AI/RAG knowledge infrastructure, Industry 4.0/5.0 transformation, negotiation training, and factory compliance (technical & ESG).">
+  <title>PAQ-Consultancy Ltd — Smart Manufacturing &amp; AI Integration</title>
+  <meta name="description" content="PAQ-Consultancy Ltd: smart manufacturing system integration and AIG/RAG knowledge solutions for Industry 5.0 — locally deployed or cloud-supported, with product and factory compliance expertise.">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,272 +15,409 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="top" data-nav>
+  <!-- ══════════ NAV ══════════ -->
+  <nav class="nav" aria-label="Main navigation" data-nav>
     <div class="nav__inner">
-      <a class="nav__brand" href="#top" aria-label="PAQ-Consultancy home">
+      <a class="nav__brand" href="#top" aria-label="PAQ-Consultancy — home">
         <img src="assets/logo-512.png" alt="" width="40" height="40" class="nav__logo">
         <span class="nav__name">PAQ<em>·</em>Consultancy</span>
       </a>
-      <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <div class="nav__links" id="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#areas">Practice&nbsp;areas</a>
-        <a href="#industry5">Industry&nbsp;5.0</a>
-        <a href="#mark">The&nbsp;Mark</a>
-        <a href="#contact" class="nav__cta">Talk to us</a>
-      </nav>
-      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
+        <a href="#areas">Industries</a>
+        <a href="#industry5">Industry 5.0</a>
+        <a href="#mark">The Mark</a>
+        <a href="#contact" class="nav__cta">Discuss your project</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main id="main">
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__grid-lines" aria-hidden="true"></div>
+    <!-- ══════════ HERO ══════════ -->
+    <header class="hero" id="top">
       <div class="hero__inner">
-        <div class="hero__copy" data-reveal>
-          <p class="eyebrow"><span class="eyebrow__tick"></span>PAQ-Consultancy Ltd · System Compliance</p>
-          <h1 id="hero-title">Compliance, engineered for the next industrial&nbsp;era.</h1>
-          <p class="hero__lede">We help manufacturers and brands navigate complex regulatory landscapes —
-            with precision-engineered solutions across product compliance, smart-documentation,
-            and Industry 5.0 transformation.</p>
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__tick"></span>PAQ-Consultancy Ltd · Smart Manufacturing &amp; AI Integration</p>
+          <h1 id="hero-title">Connected systems.<br>Empowered people.<br><em>Industry&nbsp;5.0.</em></h1>
+          <p class="hero__lede">We integrate smart manufacturing systems and AI-powered knowledge solutions
+            across multiple industries—connecting people, production, and information to support more
+            informed decisions. From factory systems to AIG and retrieval-augmented generation (RAG)
+            solutions, we help you bring technology into everyday operations, running locally or with
+            cloud support.</p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#services">Explore the practice</a>
-            <a class="btn btn--ghost" href="#contact">Start a conversation</a>
+            <a class="btn btn--primary" href="#services">Explore Our Solutions</a>
+            <a class="btn btn--ghost" href="#contact">Discuss Your Project</a>
           </div>
         </div>
 
         <div class="hero__emblem" data-reveal>
           <div class="gauge" aria-hidden="true">
-            <svg class="gauge__ring" viewBox="0 0 600 600" role="presentation">
-              <circle cx="300" cy="300" r="286" fill="none" stroke="#0e2a3f" stroke-width="1.5" opacity=".16"/>
+            <svg class="gauge__ring" viewBox="0 0 600 600" role="presentation" focusable="false">
+              <circle cx="300" cy="300" r="286" fill="none" stroke="#0e2a3f" stroke-opacity=".14" stroke-width="1.5"/>
               <g transform="rotate(-90 300 300)">
-                <circle cx="300" cy="300" r="270" fill="none" stroke="#2fbdb0" stroke-width="9" stroke-dasharray="2 21.56" opacity=".5"/>
-                <circle cx="300" cy="300" r="270" fill="none" stroke="#0e2a3f" stroke-width="18" stroke-dasharray="2.5 138.87" opacity=".55"/>
+                <circle cx="300" cy="300" r="270" fill="none" stroke="#2fbdb0" stroke-opacity=".5"
+                        stroke-width="9" stroke-dasharray="2 21.56"/>
+                <circle cx="300" cy="300" r="270" fill="none" stroke="#0e2a3f" stroke-opacity=".55"
+                        stroke-width="18" stroke-dasharray="2.5 138.87"/>
               </g>
               <circle cx="300" cy="14" r="4.5" fill="#77b83f"/>
             </svg>
-            <img class="gauge__logo" src="assets/logo.png" alt="PAQ-Consultancy emblem: a human figure at the centre of a precision gear, traced by circuits, continuous arrows and a leaf" width="520" height="520">
+            <img class="gauge__logo" src="assets/logo.png"
+                 alt="PAQ emblem — a human silhouette at the heart of a gear, encircled by electronic circuits, a green leaf and circular arrows"
+                 width="520" height="520">
           </div>
         </div>
       </div>
       <p class="hero__scrollcue" aria-hidden="true">Scroll</p>
-    </section>
+    </header>
 
-    <!-- ============ ABOUT ============ -->
+    <!-- ══════════ ABOUT ══════════ -->
     <section class="section section--paper" id="about" aria-labelledby="about-title">
       <div class="shell">
         <div class="section__head" data-reveal>
-          <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Who we are</p>
-          <h2 id="about-title">A consultancy built for regulatory complexity</h2>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>About us</p>
+          <h2 id="about-title">Bringing Industry 5.0 into everyday operations</h2>
         </div>
+
         <div class="about__grid">
           <div class="about__text" data-reveal>
-            <p>PAQ-Consultancy was founded on a simple observation: regulation is becoming the hardest
-              part of bringing a product to market. Standards shift, borders multiply requirements, and
-              a single missed detail can stop a shipment — or a launch.</p>
-            <p>We exist to make that complexity navigable. Our work spans three interconnected disciplines —
-              international product compliance, negotiation training, and Industry 5.0 transformation —
-              delivered with the same principle: precision first, jargon last.</p>
+            <p>Smart manufacturing is about more than automation. It is about helping people work
+              effectively with technology—and making systems, data, and knowledge work together.</p>
+            <p>PAQ-Consultancy provides smart manufacturing system integration and AIG / RAG solutions
+              for organisations across multiple industries. We help connect operational systems and make
+              business knowledge more accessible, with deployment approaches suited to your working
+              environment.</p>
+            <p>Our approach brings together manufacturing integration, AI-enabled knowledge, and
+              compliance expertise to support human-centric, sustainable, and resilient operations.</p>
           </div>
+
           <dl class="about__facts" data-reveal>
-            <div class="fact"><dt>3</dt><dd>service pillars, one joined-up practice</dd></div>
-            <div class="fact"><dt>5</dt><dd>practice areas, from consumer goods to AI infrastructure</dd></div>
-            <div class="fact"><dt>∞</dt><dd>compliance cycles — regulation never stands still, neither do we</dd></div>
+            <div class="fact">
+              <dt>3</dt>
+              <dd>capabilities, one connected approach</dd>
+            </div>
+            <div class="fact">
+              <dt>5</dt>
+              <dd>practice areas, tailored to your operations</dd>
+            </div>
+            <div class="fact">
+              <dt>2</dt>
+              <dd>deployment modes — local or cloud-supported</dd>
+            </div>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
+    <!-- ══════════ SERVICES ══════════ -->
     <section class="section section--tint" id="services" aria-labelledby="services-title">
       <div class="shell">
-        <div class="section__head section__head--split" data-reveal>
-          <div>
-            <p class="eyebrow"><span class="eyebrow__tick"></span>What we do</p>
-            <h2 id="services-title">Three pillars, one direction: yours</h2>
-          </div>
-          <p class="section__intro">Each pillar stands alone — and each strengthens the others. Compliance
-            knowledge sharpens negotiation; negotiation opens doors for transformation.</p>
+        <div class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>Our services</p>
+          <h2 id="services-title">Three capabilities. One connected approach.</h2>
         </div>
 
         <div class="pillars">
           <article class="pillar" data-reveal>
             <div class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M7 24h34M24 7c6 5 6 29 0 34M24 7c-6 5-6 29 0 34" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 31l6-1-6.5-2.6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M5 34V17l9 5.5V17l9 5.5V17l9 5.5V34z" stroke-linejoin="round"/>
+                <path d="M21 12V8h5v8" stroke-linejoin="round"/><circle cx="12" cy="10" r="4"/>
+              </svg>
             </div>
-            <h3>International Product Compliance</h3>
-            <p>Market access without the guesswork. We map the regulations that apply to your product,
-              close the gaps, and keep you audit-ready across every market you sell into.</p>
-            <p class="pillar__tags">Toys, cosmetics, medical parts, hardgoods, batteries</p>
+            <h3>Smart Manufacturing System Integration</h3>
+            <p class="pillar__tagline">Bring people, equipment, and operational information closer together.</p>
+            <p>We integrate smart manufacturing systems to support connected workflows and better access
+              to the information teams need. Our focus is on technology that fits your operations and
+              supports the people using it.</p>
+            <p class="pillar__tags">System connectivity, workflow integration, human–machine collaboration</p>
           </article>
 
           <article class="pillar" data-reveal>
             <div class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M9 12h18a5 5 0 0 1 5 5v6a5 5 0 0 1-5 5H19l-7 6v-6H9a5 5 0 0 1-5-5v-6a5 5 0 0 1 5-5z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M36 20h3a5 5 0 0 1 5 5v5a5 5 0 0 1-5 5h-1l-6 5v-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="12" y="12" width="16" height="16" rx="2.5"/>
+                <rect x="17" y="17" width="6" height="6" rx="1"/>
+                <path d="M16 5v4M24 5v4M16 31v4M24 31v4M5 16h4M5 24h4M31 16h4M31 24h4" stroke-linecap="round"/>
+              </svg>
             </div>
-            <h3>Negotiation Training</h3>
-            <p>Strategic communication is a skill, not a talent. Our programmes build the discipline to
-              handle regulatory discussions, commercial deals, and difficult stakeholders — and land
-              outcomes that hold.</p>
-            <p class="pillar__tags">Regulatory talks, commercial deals, stakeholder management</p>
+            <h3>AIG &amp; RAG Knowledge Solutions</h3>
+            <p class="pillar__tagline">Put your organisation’s knowledge to work.</p>
+            <p>We build AIG and retrieval-augmented generation solutions that help teams find and use
+              information from relevant organisational sources. Connect technical documents, procedures,
+              and compliance knowledge to AI-assisted workflows that support human judgement.</p>
+            <p class="pillar__tags">Knowledge retrieval, document-grounded assistance, operational decision support</p>
           </article>
 
           <article class="pillar" data-reveal>
             <div class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="17" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 40c0-7 5-11 11-11s11 4 11 11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M30 20l6 3v8l-6 3-6-3v-8z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M30 27h-2M38 30h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M20 4l13 5v9.5c0 8.3-5.6 13.9-13 17.5C12.6 32.4 7 26.8 7 18.5V9z" stroke-linejoin="round"/>
+                <path d="M14 19.5l4.5 4.5L27 15" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-            <h3>Industry 5.0 Transformation</h3>
-            <p>Beyond automation: human-centric manufacturing built on personalisation, sustainability,
-              and genuine human–machine collaboration. We help you adopt the paradigm, not just the buzzword.</p>
-            <p class="pillar__tags">Human-centric, sustainable, collaborative</p>
+            <h3>Compliance &amp; Transformation Support</h3>
+            <p class="pillar__tagline">Keep operational change connected to your responsibilities.</p>
+            <p>We bring product and factory compliance expertise into manufacturing transformation,
+              helping organisations consider regulatory requirements, documentation, quality, and
+              sustainability alongside technology adoption.</p>
+            <p class="pillar__tags">Product compliance, factory compliance, technical and ESG considerations</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ PRACTICE AREAS ============ -->
+    <!-- ══════════ WHERE WE CAN HELP ══════════ -->
     <section class="section section--paper" id="areas" aria-labelledby="areas-title">
       <div class="shell">
         <div class="section__head" data-reveal>
-          <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Where we can help</p>
-          <h2 id="areas-title">Five practice areas, one standard</h2>
-          <p class="section__intro">From consumer goods to AI infrastructure, every engagement gets the
-            same treatment: precise knowledge, clean documentation, and outcomes that hold up over time.</p>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>Where we can help</p>
+          <h2 id="areas-title">Across industries. Built around your operations.</h2>
+          <p class="section__intro">Every organisation has a different mix of equipment, systems,
+            knowledge, and requirements. We tailor integration and AI solutions to that environment
+            rather than treating transformation as a one-size-fits-all exercise.</p>
         </div>
+
         <ul class="sectors" role="list">
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M10 14h20l-2.2 19a2.5 2.5 0 0 1-2.5 2.3H14.7a2.5 2.5 0 0 1-2.5-2.3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M15 14a5 5 0 0 1 10 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M5 34V17l9 5.5V17l9 5.5V17l9 5.5V34z" stroke-linejoin="round"/>
+              <path d="M21 12V8h5v8" stroke-linejoin="round"/><circle cx="12" cy="10" r="4"/>
+            </svg>
+            <h3>Manufacturing &amp; Production</h3>
+            <p>Connect manufacturing systems and operational information to support coordinated workflows
+              and human-led decisions.</p>
+          </li>
+          <li class="sector" data-reveal>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M10 14h20l-2.2 19a2.5 2.5 0 0 1-2.5 2.3H14.7a2.5 2.5 0 0 1-2.5-2.3z" stroke-linejoin="round"/>
+              <path d="M15 14a5 5 0 0 1 10 0" stroke-linecap="round"/>
+            </svg>
             <h3>Consumer Products</h3>
-            <p>International product compliance for toys, cosmetics, medical parts, hardgoods, and batteries — safety, testing, and market access worldwide.</p>
+            <p>Bring smart manufacturing and knowledge solutions together with product compliance
+              expertise across toys, cosmetics, medical parts, hardgoods, and batteries.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="12" y="12" width="16" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="17" y="17" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 5v4M24 5v4M16 31v4M24 31v4M5 16h4M5 24h4M31 16h4M31 24h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-            <h3>AIG / AI / RAG Infrastructure</h3>
-            <p>Knowledge AGI databases and retrieval pipelines that turn your compliance knowledge into instant, queryable answers.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M20 4l13 5v9.5c0 8.3-5.6 13.9-13 17.5C12.6 32.4 7 26.8 7 18.5V9z" stroke-linejoin="round"/>
+              <path d="M14 19.5l4.5 4.5L27 15" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Quality &amp; Compliance</h3>
+            <p>Make procedures, standards, and regulatory knowledge easier to retrieve and use in
+              day-to-day work.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 34V17l9 5.5V17l9 5.5V17l9 5.5V34z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M21 12V8h5v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
-            <h3>Industry 4.0 / 5.0</h3>
-            <p>From connected automation to human-centric manufacturing — strategy, adoption, and the compliance that travels with it.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <rect x="12" y="12" width="16" height="16" rx="2.5"/>
+              <rect x="17" y="17" width="6" height="6" rx="1"/>
+              <path d="M16 5v4M24 5v4M16 31v4M24 31v4M5 16h4M5 24h4M31 16h4M31 24h4" stroke-linecap="round"/>
+            </svg>
+            <h3>Enterprise Knowledge &amp; AI Infrastructure</h3>
+            <p>Organise technical and business information into a connected knowledge resource for AIG
+              and RAG applications.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 7h16a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4h-7l-6 5v-5H7a4 4 0 0 1-4-4v-5a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M31 16h2a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-1l-5 4.5V28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
-            <h3>Negotiation Training</h3>
-            <p>Programmes that build strategic communication for regulatory discussions, commercial deals, and stakeholder management.</p>
-          </li>
-          <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v9.5c0 8.3-5.6 13.9-13 17.5C12.6 32.4 7 26.8 7 18.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M14 19.5l4.5 4.5L27 15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3>Factory Compliance</h3>
-            <p>Technical and ESG — factory audits, quality regimes, and environmental, social, and governance standards, end to end.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M30 6C16 6 8 14 8 28c0 3 .5 5 1.2 6C12 32 30 28 30 6z" stroke-linejoin="round"/>
+              <path d="M11 31c4-8 9-13 16-17" stroke-linecap="round"/>
+            </svg>
+            <h3>Factory Operations &amp; Sustainability</h3>
+            <p>Support Industry 5.0 initiatives by bringing operational, technical, and ESG
+              considerations into system integration planning.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ INDUSTRY 5.0 ============ -->
+    <!-- ══════════ INDUSTRY 5.0 + AIG/RAG ══════════ -->
     <section class="section section--tint section--flush" id="industry5" aria-labelledby="i5-title">
       <div class="shell">
-        <div class="i5">
-          <div class="i5__intro" data-reveal>
-            <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>The next shift</p>
-            <h2 id="i5-title">Industry 5.0 puts people back at the centre of the machine</h2>
-            <p>The fourth industrial revolution automated. The fifth collaborates. Industry 5.0 asks a
-              different question — not <em>what can machines do instead of people</em>, but
-              <em>what can they do alongside them</em>. Personalised products, resilient and sustainable
-              operations, and technology that amplifies human judgement rather than replacing it.</p>
-            <p>This is the future our emblem is drawn from — and the direction we help clients move in.</p>
-          </div>
-          <div class="i5__grid" data-reveal>
-            <ul class="i5__principles" role="list">
-              <li><strong>Human-centric</strong><span>Technology serves the worker, never the reverse.</span></li>
-              <li><strong>Personalisation</strong><span>Batch-of-one manufacturing, without losing compliance control.</span></li>
-              <li><strong>Sustainability</strong><span>Circularity and responsibility designed in, not bolted on.</span></li>
-              <li><strong>Collaboration</strong><span>Human and machine each doing what they do best.</span></li>
+        <div class="i5__intro" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>Our Industry 5.0 approach</p>
+          <h2 id="i5-title">Technology that works alongside people</h2>
+          <p>Industry 5.0 builds on connected manufacturing with a stronger focus on people,
+            sustainability, and resilience.</p>
+          <p>For PAQ-Consultancy, this means integrating systems and AI in ways that support human
+            expertise—not simply adding more automation. The goal is to help teams access relevant
+            knowledge, understand their operations, and respond to changing requirements.</p>
+        </div>
+
+        <div class="i5__grid">
+          <ul class="i5__principles" role="list" data-reveal>
+            <li><strong>Human-centric</strong><span>Design technology around the people who operate,
+              manage, and improve your processes.</span></li>
+            <li><strong>Sustainable</strong><span>Consider resource use and environmental
+              responsibilities as part of transformation planning.</span></li>
+            <li><strong>Resilient</strong><span>Support operations that can adapt to changing production
+              needs, information, and requirements.</span></li>
+            <li><strong>Collaborative</strong><span>Connect human judgement with manufacturing systems
+              and AI-assisted knowledge.</span></li>
+          </ul>
+
+          <aside class="agi" data-reveal>
+            <p class="eyebrow"><span class="eyebrow__tick"></span>AIG &amp; RAG solutions</p>
+            <h3 id="agi-title">Your knowledge. Accessible where work happens.</h3>
+            <p>Valuable organisational knowledge is often spread across documents, departments, and
+              disconnected systems.</p>
+            <p>Our AIG and RAG solutions help bring that information into everyday workflows. RAG
+              retrieves relevant material from connected knowledge sources to inform AI-generated
+              responses, helping teams work with organisational context rather than relying only on a
+              model’s general knowledge.</p>
+            <ul class="agi__flow" role="list">
+              <li><span class="agi__chip">Connect your knowledge</span> — bring together selected
+                procedures, technical documentation, and compliance references.</li>
+              <li><span class="agi__chip">Make information easier to use</span> — help teams locate
+                relevant information through natural-language questions.</li>
+              <li><span class="agi__chip">Keep people in control</span> — AI assists understanding and
+                decision-making, with human review for important operational and compliance decisions.</li>
             </ul>
-            <aside class="agi" aria-labelledby="agi-title">
-              <p class="eyebrow"><span class="eyebrow__tick"></span>Knowledge infrastructure</p>
-              <h3 id="agi-title">Knowledge AGI databases</h3>
-              <p>Compliance knowledge shouldn't live in inboxes and memory. We build intelligent knowledge
-                systems that capture, organise, and serve regulatory insight at scale — so decisions that
-                once took weeks take minutes.</p>
-              <ul class="agi__flow" role="list">
-                <li><span class="agi__chip">Capture</span> every ruling, standard, and lesson</li>
-                <li><span class="agi__chip">Organise</span> knowledge into a queryable whole</li>
-                <li><span class="agi__chip">Leverage</span> it for fast, data-driven decisions</li>
-              </ul>
-            </aside>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- ============ THE MARK ============ -->
+    <!-- ══════════ DEPLOYMENT OPTIONS ══════════ -->
+    <section class="section section--paper" id="deployment" aria-labelledby="deployment-title">
+      <div class="shell">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>Deployment options</p>
+          <h2 id="deployment-title">Local or cloud-supported. Matched to your environment.</h2>
+          <p class="section__intro">Your AI and knowledge systems should fit the way your organisation
+            operates.</p>
+        </div>
+
+        <div class="pillars pillars--two" data-reveal>
+          <article class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="6" y="7" width="28" height="11" rx="2.5"/>
+                <rect x="6" y="22" width="28" height="11" rx="2.5"/>
+                <circle cx="28" cy="12.5" r="1.6" fill="currentColor" stroke="none"/>
+                <circle cx="28" cy="27.5" r="1.6" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <h3>Local Deployment</h3>
+            <p>Run AIG and RAG solutions within your own environment when local operation and data
+              control are priorities.</p>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round">
+                <path d="M12.5 29h16a6 6 0 0 0 1.2-11.87A8.5 8.5 0 0 0 13.4 13.6 7.5 7.5 0 0 0 12.5 29z"/>
+              </svg>
+            </div>
+            <h3>Cloud-Supported Deployment</h3>
+            <p>Use cloud support where it suits your organisation’s infrastructure, accessibility, and
+              operational requirements.</p>
+          </article>
+        </div>
+
+        <p class="duo__closer" data-reveal>We work with you to select an approach based on your existing
+          systems, data-handling requirements, connectivity, and intended use.</p>
+      </div>
+    </section>
+
+    <!-- ══════════ COMPLEMENTARY EXPERTISE ══════════ -->
+    <section class="section section--tint" id="expertise" aria-labelledby="expertise-title">
+      <div class="shell">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>Complementary expertise</p>
+          <h2 id="expertise-title">Supporting the people and processes behind transformation</h2>
+        </div>
+        <div class="expertise" data-reveal>
+          <p>Technology integration also depends on clear communication and an understanding of
+            operational responsibilities.</p>
+          <p>Alongside our smart manufacturing and AI services, we offer international product
+            compliance, factory compliance, and negotiation training to support regulatory discussions,
+            commercial engagement, and stakeholder coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ OUR MARK ══════════ -->
     <section class="section section--navy" id="mark" aria-labelledby="mark-title">
       <div class="shell">
         <div class="section__head" data-reveal>
-          <p class="eyebrow"><span class="eyebrow__tick"></span>The mark</p>
-          <h2 id="mark-title">One emblem, five commitments</h2>
-          <p class="section__intro">Our logo is a compact of everything we stand for. Read it like a diagram.</p>
-        </div>
-        <div class="mark">
-          <figure class="mark__emblem" data-reveal>
-            <img src="assets/logo.png" alt="The PAQ-Consultancy emblem" width="460" height="460">
-          </figure>
-          <ul class="mark__legend" role="list">
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 4v6M20 30v6M4 20h6M30 20h6M9 9l4.2 4.2M26.8 26.8L31 31M31 9l-4.2 4.2M13.2 26.8L9 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-              <div><h3>The gear</h3><p>Industrial precision — engineered thinking applied to regulation.</p></div>
-            </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M8 34c0-6 5-10 12-10s12 4 12 10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-              <div><h3>The human figure</h3><p>Human-centric values — Industry 5.0's person at the centre.</p></div>
-            </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><circle cx="9" cy="20" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="31" cy="9" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="31" cy="31" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12.4 20h10M22.4 20L28 12M22.4 20L28 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-              <div><h3>The circuits</h3><p>Technological integration — data and systems behind every answer.</p></div>
-            </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5a15 15 0 0 1 13 7.7M20 35A15 15 0 0 1 7 27.3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M33 5v8h-8M7 35v-8h8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div><h3>The circular arrows</h3><p>Continuous compliance cycles — regulation never ends; neither does vigilance.</p></div>
-            </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><path d="M30 6C16 6 8 14 8 28c0 3 .5 5 1.2 6C12 32 30 28 30 6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 31c4-8 9-13 16-17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-              <div><h3>The leaf</h3><p>Sustainability — growth that doesn't borrow from the future.</p></div>
-            </li>
-          </ul>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>Our mark</p>
+          <h2 id="mark-title">One emblem. A connected Industry 5.0 vision.</h2>
         </div>
 
-        <div class="palette" data-reveal>
-          <p class="palette__label">Four colours, four signals</p>
-          <ul class="palette__chips" role="list">
-            <li><span class="chip chip--navy"></span><strong>Deep navy</strong><span>authority &amp; trust</span></li>
-            <li><span class="chip chip--teal"></span><strong>Teal</strong><span>technological innovation</span></li>
-            <li><span class="chip chip--green"></span><strong>Green</strong><span>sustainability &amp; growth</span></li>
-            <li><span class="chip chip--steel"></span><strong>Steel blue</strong><span>professional balance</span></li>
+        <div class="mark">
+          <figure class="mark__emblem" data-reveal>
+            <img src="PAQC logo.jpeg"
+                 alt="The PAQ emblem in its full colour composition"
+                 width="560" height="560">
+          </figure>
+          <ul class="mark__legend" role="list" data-reveal>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <circle cx="20" cy="20" r="7"/>
+                <path d="M20 4v6M20 30v6M4 20h6M30 20h6M9 9l4.2 4.2M26.8 26.8L31 31M31 9l-4.2 4.2M13.2 26.8L9 31" stroke-linecap="round"/>
+              </svg>
+              <div><h3>The gear</h3><p><strong>Manufacturing expertise.</strong> Practical, engineered
+                thinking for industrial operations.</p></div>
+            </li>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <circle cx="20" cy="12" r="5"/>
+                <path d="M8 34c0-6 5-10 12-10s12 4 12 10" stroke-linecap="round"/>
+              </svg>
+              <div><h3>The human figure</h3><p><strong>People at the centre.</strong> Technology that
+                supports human skills and judgement.</p></div>
+            </li>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <circle cx="9" cy="20" r="3.4"/><circle cx="31" cy="9" r="3.4"/><circle cx="31" cy="31" r="3.4"/>
+                <path d="M12.4 20h10M22.4 20L28 12M22.4 20L28 28" stroke-linecap="round"/>
+              </svg>
+              <div><h3>The circuits</h3><p><strong>Intelligent integration.</strong> Connecting systems,
+                data, and organisational knowledge.</p></div>
+            </li>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true">
+                <path d="M20 5a15 15 0 0 1 13 7.7M20 35A15 15 0 0 1 7 27.3" stroke-linecap="round"/>
+                <path d="M33 5v8h-8M7 35v-8h8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div><h3>The circular arrows</h3><p><strong>Continuous improvement.</strong> Adapting
+                systems and practices as requirements evolve.</p></div>
+            </li>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <path d="M30 6C16 6 8 14 8 28c0 3 .5 5 1.2 6C12 32 30 28 30 6z" stroke-linejoin="round"/>
+                <path d="M11 31c4-8 9-13 16-17" stroke-linecap="round"/>
+              </svg>
+              <div><h3>The leaf</h3><p><strong>Sustainability.</strong> Considering environmental
+                responsibility alongside operational progress.</p></div>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ══════════ CONTACT ══════════ -->
     <section class="section section--paper" id="contact" aria-labelledby="contact-title">
       <div class="shell">
         <div class="contact">
           <div class="contact__intro" data-reveal>
-            <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Contact</p>
-            <h2 id="contact-title">Start a conversation</h2>
-            <p>Tell us what you're building and which markets it needs to reach. We'll come back with a
-              clear view of what compliance looks like for you.</p>
+            <p class="eyebrow"><span class="eyebrow__tick"></span>Contact</p>
+            <h2 id="contact-title">Let’s connect your next stage of manufacturing.</h2>
+            <p>Looking to integrate manufacturing systems, make better use of organisational knowledge,
+              or introduce AIG and RAG into your operations?</p>
+            <p>Tell us about your industry, existing systems, and the challenge you want to address.
+              We can discuss an approach with local deployment or cloud support.</p>
             <address class="contact__details">
               <a href="mailto:info@paqc.biz">info@paqc.biz</a>
-              <span>Serving clients internationally</span>
+              <span>Local deployment or cloud support — matched to your environment</span>
             </address>
           </div>
+
           <form class="contact__form" data-contact-form data-reveal>
             <div class="field">
               <label for="f-name">Name</label>
@@ -298,43 +435,48 @@
               <label for="f-sector">Area of interest</label>
               <select id="f-sector" name="sector">
                 <option value="">Select…</option>
-                <option>Consumer Products</option>
-                <option>AIG / AI / RAG Infrastructure</option>
-                <option>Industry 4.0 / 5.0</option>
+                <option>Smart Manufacturing System Integration</option>
+                <option>AIG / RAG Solutions</option>
+                <option>Local / Cloud-Supported Deployment</option>
+                <option>Industry 5.0 Transformation</option>
+                <option>Product / Factory Compliance</option>
                 <option>Negotiation Training</option>
-                <option>Factory Compliance (Technical or ESG)</option>
               </select>
             </div>
             <div class="field field--full">
-              <label for="f-msg">What are you working on?</label>
+              <label for="f-msg">Tell us about your project</label>
               <textarea id="f-msg" name="message" rows="4" required></textarea>
             </div>
-            <button class="btn btn--primary contact__submit" type="submit">Send enquiry</button>
-            <p class="contact__note" data-form-note hidden>Opening your email client…</p>
+            <button class="btn btn--primary contact__submit" type="submit">Discuss Your Project</button>
+            <p class="contact__note" data-form-note hidden>Opening your email client —
+              if nothing happens, write to <a href="mailto:info@paqc.biz">info@paqc.biz</a> directly.</p>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ══════════ FOOTER ══════════ -->
   <footer class="footer">
     <div class="shell footer__inner">
       <a class="footer__brand" href="#top">
-        <img src="assets/logo-512.png" alt="" width="34" height="34">
+        <img src="assets/logo-512.png" alt="" width="28" height="28">
         <span>PAQ·Consultancy Ltd</span>
       </a>
-      <nav class="footer__links" aria-label="Footer">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#areas">Practice areas</a>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#about">About us</a>
+        <a href="#services">Our services</a>
+        <a href="#areas">Industries</a>
         <a href="#industry5">Industry 5.0</a>
+        <a href="#deployment">Deployment</a>
+        <a href="#mark">Our mark</a>
         <a href="#contact">Contact</a>
       </nav>
-      <p class="footer__legal">© 2026 PAQ-Consultancy Ltd. Precision compliance for the next industrial era.</p>
+      <p class="footer__legal">© 2026 PAQ-Consultancy Ltd — Connecting manufacturing, knowledge,
+        and people for Industry 5.0.</p>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
