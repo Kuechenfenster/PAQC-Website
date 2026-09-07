@@ -3,50 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAQ-Consultancy Ltd — Precision Compliance for the Next Industrial Era</title>
+  <title>PAQ-Consultancy Ltd — System Compliance for the Next Industrial Era</title>
   <meta name="description" content="PAQ-Consultancy Ltd: precision-engineered compliance across five practice areas — consumer products, AIG/AI/RAG knowledge infrastructure, Industry 4.0/5.0 transformation, negotiation training, and factory compliance (technical & ESG).">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..640;1,9..144,400..640&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo-512.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="top" data-nav>
+  <!-- ══════════ NAV ══════════ -->
+  <nav class="nav" aria-label="Main navigation" data-nav>
     <div class="nav__inner">
-      <a class="nav__brand" href="#top" aria-label="PAQ-Consultancy home">
+      <a class="nav__brand" href="#top" aria-label="PAQ-Consultancy — home">
         <img src="assets/logo-512.png" alt="" width="40" height="40" class="nav__logo">
         <span class="nav__name">PAQ<em>·</em>Consultancy</span>
       </a>
-      <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <div class="nav__links" id="nav-links">
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#areas">Practice&nbsp;areas</a>
-        <a href="#industry5">Industry&nbsp;5.0</a>
-        <a href="#mark">The&nbsp;Mark</a>
+        <a href="#areas">Practice areas</a>
+        <a href="#industry5">Industry 5.0</a>
+        <a href="#mark">The Mark</a>
         <a href="#contact" class="nav__cta">Talk to us</a>
-      </nav>
-      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main id="main">
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__grid-lines" aria-hidden="true"></div>
+    <!-- ══════════ HERO ══════════ -->
+    <header class="hero" id="top">
       <div class="hero__inner">
-        <div class="hero__copy" data-reveal>
+        <div class="hero__copy">
           <p class="eyebrow"><span class="eyebrow__tick"></span>PAQ-Consultancy Ltd · System Compliance</p>
           <h1 id="hero-title">Compliance, engineered for the next industrial&nbsp;era.</h1>
           <p class="hero__lede">We help manufacturers and brands navigate complex regulatory landscapes —
-            with precision-engineered solutions across product compliance, negotiation,
+            with precision-engineered solutions across product compliance, smart-documentation,
             and Industry 5.0 transformation.</p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#services">Explore the practice</a>
@@ -55,253 +55,293 @@
         </div>
 
         <div class="hero__emblem" data-reveal>
-          <div class="orbit" aria-hidden="true">
-            <svg class="orbit__ring" viewBox="0 0 600 600" role="presentation">
-              <defs>
-                <linearGradient id="gradTeal" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#35d0c2"/><stop offset="1" stop-color="#1f9cc2"/>
-                </linearGradient>
-                <linearGradient id="gradGreen" x1="1" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#9ad14f"/><stop offset="1" stop-color="#57a83c"/>
-                </linearGradient>
-                <marker id="arrT" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto-start-reverse">
-                  <path d="M1,1 L13,7 L1,13 Z" fill="#2ec5b8"/>
-                </marker>
-                <marker id="arrG" markerWidth="14" markerHeight="14" refX="7" refY="7" orient="auto-start-reverse">
-                  <path d="M1,1 L13,7 L1,13 Z" fill="#7fc24a"/>
-                </marker>
-              </defs>
-              <g class="orbit__spin">
-                <path d="M300,54 A246,246 0 0 1 546,300" fill="none" stroke="url(#gradTeal)" stroke-width="10" stroke-linecap="round" marker-end="url(#arrT)" opacity=".9"/>
-                <path d="M300,546 A246,246 0 0 1 54,300" fill="none" stroke="url(#gradGreen)" stroke-width="10" stroke-linecap="round" marker-end="url(#arrG)" opacity=".9"/>
+          <div class="gauge" aria-hidden="true">
+            <svg class="gauge__ring" viewBox="0 0 600 600" role="presentation" focusable="false">
+              <circle cx="300" cy="300" r="286" fill="none" stroke="#0e2a3f" stroke-opacity=".14" stroke-width="1.5"/>
+              <g transform="rotate(-90 300 300)">
+                <circle cx="300" cy="300" r="270" fill="none" stroke="#2fbdb0" stroke-opacity=".5"
+                        stroke-width="9" stroke-dasharray="2 21.56"/>
+                <circle cx="300" cy="300" r="270" fill="none" stroke="#0e2a3f" stroke-opacity=".55"
+                        stroke-width="18" stroke-dasharray="2.5 138.87"/>
               </g>
-              <g class="orbit__spin orbit__spin--rev orbit__dashed">
-                <circle cx="300" cy="300" r="284" fill="none" stroke="#5a85a8" stroke-width="1.5" stroke-dasharray="3 14" opacity=".55"/>
-              </g>
-              <g class="orbit__nodes">
-                <circle class="node" cx="546" cy="300" r="7"/>
-                <circle class="node node--g" cx="54" cy="300" r="7"/>
-                <circle class="node" cx="474" cy="126" r="5"/>
-                <circle class="node node--g" cx="126" cy="474" r="5"/>
-              </g>
+              <circle cx="300" cy="14" r="4.5" fill="#77b83f"/>
             </svg>
-            <img class="orbit__logo" src="assets/logo.png" alt="PAQ-Consultancy emblem: a human figure at the centre of a precision gear, traced by circuits, continuous arrows and a leaf" width="520" height="520">
+            <img class="gauge__logo" src="assets/logo.png"
+                 alt="PAQ emblem — a human silhouette at the heart of a gear, encircled by electronic circuits, a green leaf and circular arrows"
+                 width="520" height="520">
           </div>
         </div>
       </div>
       <p class="hero__scrollcue" aria-hidden="true">Scroll</p>
-    </section>
+    </header>
 
-    <!-- ============ ABOUT ============ -->
+    <!-- ══════════ ABOUT ══════════ -->
     <section class="section section--paper" id="about" aria-labelledby="about-title">
       <div class="shell">
         <div class="section__head" data-reveal>
           <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Who we are</p>
-          <h2 id="about-title">A consultancy built for regulatory complexity</h2>
+          <h2 id="about-title">Regulatory certainty, built like a machine</h2>
         </div>
+
         <div class="about__grid">
           <div class="about__text" data-reveal>
-            <p>PAQ-Consultancy was founded on a simple observation: regulation is becoming the hardest
-              part of bringing a product to market. Standards shift, borders multiply requirements, and
-              a single missed detail can stop a shipment — or a launch.</p>
-            <p>We exist to make that complexity navigable. Our work spans three interconnected disciplines —
+            <p>PAQ-Consultancy Ltd is the system-compliance practice for manufacturers and brands
+              who need more than advice — they need architecture. We combine deep expertise in
               international product compliance, negotiation training, and Industry 5.0 transformation —
-              delivered with the same principle: precision first, jargon last.</p>
+              underpinned by our AI knowledge base, into one coherent discipline we call
+              System Compliance.</p>
+            <p>Every engagement runs on the same principle: knowledge captured once,
+              organised properly, and leveraged everywhere — from audit trails in Dongguan
+              to negotiation tables in Milan. Our proprietary PAQ system turns compliance
+              from a cost centre into continuous infrastructure.</p>
           </div>
+
           <dl class="about__facts" data-reveal>
-            <div class="fact"><dt>3</dt><dd>service pillars, one joined-up practice</dd></div>
-            <div class="fact"><dt>5</dt><dd>practice areas, from consumer goods to AI infrastructure</dd></div>
-            <div class="fact"><dt>∞</dt><dd>compliance cycles — regulation never stands still, neither do we</dd></div>
+            <div class="fact">
+              <dt>5</dt>
+              <dd>Practice areas under one roof</dd>
+            </div>
+            <div class="fact">
+              <dt>1</dt>
+              <dd>Integrated AI knowledge system — PAQ</dd>
+            </div>
+            <div class="fact">
+              <dt>∞</dt>
+              <dd>Continuous compliance cycles, by design</dd>
+            </div>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section section--navy" id="services" aria-labelledby="services-title">
+    <!-- ══════════ SERVICES ══════════ -->
+    <section class="section section--tint" id="services" aria-labelledby="services-title">
       <div class="shell">
-        <div class="section__head section__head--split" data-reveal>
-          <div>
-            <p class="eyebrow"><span class="eyebrow__tick"></span>What we do</p>
-            <h2 id="services-title">Three pillars, one direction: yours</h2>
-          </div>
-          <p class="section__intro">Each pillar stands alone — and each strengthens the others. Compliance
-            knowledge sharpens negotiation; negotiation opens doors for transformation.</p>
+        <div class="section__head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__tick"></span>What we do</p>
+          <h2 id="services-title">Three pillars, one system</h2>
         </div>
 
         <div class="pillars">
           <article class="pillar" data-reveal>
             <div class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M7 24h34M24 7c6 5 6 29 0 34M24 7c-6 5-6 29 0 34" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 31l6-1-6.5-2.6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M24 6 8 16v16l16 10 16-10V16L24 6Z"/><path d="M8 16l16 10 16-10M24 26v16"/>
+              </svg>
             </div>
-            <h3>International Product Compliance</h3>
-            <p>Market access without the guesswork. We map the regulations that apply to your product,
-              close the gaps, and keep you audit-ready across every market you sell into.</p>
-            <p class="pillar__tags">Toys · Cosmetics · Medical parts · Hardgoods · Batteries</p>
+            <h3>Product Compliance</h3>
+            <p>End-to-end regulatory compliance for consumer products entering the EU, UK and
+              global markets — standards mapping, technical documentation, testing coordination
+              and audit evidence that holds up.</p>
+            <p class="pillar__tags">Toys, cosmetics, medical parts, hardgoods, batteries</p>
           </article>
 
           <article class="pillar" data-reveal>
             <div class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M9 12h18a5 5 0 0 1 5 5v6a5 5 0 0 1-5 5H19l-7 6v-6H9a5 5 0 0 1-5-5v-6a5 5 0 0 1 5-5z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M36 20h3a5 5 0 0 1 5 5v5a5 5 0 0 1-5 5h-1l-6 5v-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="15" cy="24" r="6"/><circle cx="33" cy="24" r="6"/><path d="M21 24h6M15 18c-4-6-8-8-11-8M15 30c-4 6-8 8-11 8M33 18c4-6 8-8 11-8M33 30c4 6 8 8 11 8" stroke-linecap="round"/>
+              </svg>
             </div>
-            <h3>Negotiation Training</h3>
-            <p>Strategic communication is a skill, not a talent. Our programmes build the discipline to
-              handle regulatory discussions, commercial deals, and difficult stakeholders — and land
-              outcomes that hold.</p>
-            <p class="pillar__tags">Regulatory talks · Commercial deals · Stakeholder management</p>
+            <h3>Negotiation</h3>
+            <p>Systematic negotiation training and live support — especially at the
+              China–Europe interface where deals are made or lost in the details of
+              compliance and culture alike.</p>
+            <p class="pillar__tags">Regulatory talks, commercial deals, stakeholder management</p>
           </article>
 
           <article class="pillar" data-reveal>
             <div class="pillar__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="17" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 40c0-7 5-11 11-11s11 4 11 11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M30 20l6 3v8l-6 3-6-3v-8z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M30 27h-2M38 30h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="24" cy="14" r="5"/><path d="M14 42c0-8 4-13 10-13s10 5 10 13" stroke-linecap="round"/><path d="M6 24h4M38 24h4M24 4v3" stroke-linecap="round"/>
+              </svg>
             </div>
-            <h3>Industry 5.0 Transformation</h3>
-            <p>Beyond automation: human-centric manufacturing built on personalisation, sustainability,
-              and genuine human–machine collaboration. We help you adopt the paradigm, not just the buzzword.</p>
-            <p class="pillar__tags">Human-centric · Sustainable · Collaborative</p>
+            <h3>Industry 5.0</h3>
+            <p>Human-centric digital transformation: we modernise factories and workflows
+              so that technology serves people — never the other way round.</p>
+            <p class="pillar__tags">Human-centric, sustainable, collaborative</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ PRACTICE AREAS ============ -->
+    <!-- ══════════ PRACTICE AREAS ══════════ -->
     <section class="section section--paper" id="areas" aria-labelledby="areas-title">
       <div class="shell">
-        <div class="section__head" data-reveal>
-          <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Where we can help</p>
-          <h2 id="areas-title">Five practice areas, one standard</h2>
-          <p class="section__intro">From consumer goods to AI infrastructure, every engagement gets the
-            same treatment: precise knowledge, clean documentation, and outcomes that hold up over time.</p>
+        <div class="section__head section__head--split" data-reveal>
+          <div>
+            <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Practice areas</p>
+            <h2 id="areas-title">Five disciplines, precisely interlocked</h2>
+          </div>
+          <p class="section__intro">Each client engagement draws from all five areas —
+            because in the real world, compliance, negotiation and transformation
+            are never separate problems.</p>
         </div>
+
         <ul class="sectors" role="list">
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M10 14h20l-2.2 19a2.5 2.5 0 0 1-2.5 2.3H14.7a2.5 2.5 0 0 1-2.5-2.3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M15 14a5 5 0 0 1 10 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-            <h3>Consumer Products</h3>
-            <p>International product compliance for toys, cosmetics, medical parts, hardgoods, and batteries — safety, testing, and market access worldwide.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M20 4 6 12v16l14 8 14-8V12L20 4Z"/><path d="M13 17c2-1.5 5-2 7-2s5 .5 7 2M20 15v10"/>
+            </svg>
+            <h3>Consumer Products &amp; Compliance</h3>
+            <p>Product safety, standards conformity and market-entry compliance for consumer
+              goods — from toys and cosmetics to battery-powered devices.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="12" y="12" width="16" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="17" y="17" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 5v4M24 5v4M16 31v4M24 31v4M5 16h4M5 24h4M31 16h4M31 24h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-            <h3>AIG / AI / RAG Infrastructure</h3>
-            <p>Knowledge AGI databases and retrieval pipelines that turn your compliance knowledge into instant, queryable answers.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="20" cy="20" r="7"/><circle cx="20" cy="6" r="3"/><circle cx="32" cy="26" r="3"/><circle cx="8" cy="26" r="3"/><path d="M20 13V9M26 24l3.5.5M14 24l-3.5.5"/>
+            </svg>
+            <h3>AIG · AI/RAG Knowledge</h3>
+            <p>Proprietary knowledge infrastructure: our PAQ system captures compliance
+              intelligence in structured, auditable form — retrievable in seconds,
+              defensible in court.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M5 34V17l9 5.5V17l9 5.5V17l9 5.5V34z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M21 12V8h5v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
-            <h3>Industry 4.0 / 5.0</h3>
-            <p>From connected automation to human-centric manufacturing — strategy, adoption, and the compliance that travels with it.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="20" cy="20" r="14"/><path d="M20 12v8l6 4" stroke-linecap="round"/><path d="M20 6a14 14 0 0 1 14 14M20 34A14 14 0 0 1 6 20" stroke-opacity=".45"/>
+            </svg>
+            <h3>Industry 4.0 → 5.0</h3>
+            <p>Digital transformation of production with a human-centric compass:
+              efficiency gains that people actually adopt and regulators actually accept.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 7h16a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4h-7l-6 5v-5H7a4 4 0 0 1-4-4v-5a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M31 16h2a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-1l-5 4.5V28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
-            <h3>Negotiation Training</h3>
-            <p>Programmes that build strategic communication for regulatory discussions, commercial deals, and stakeholder management.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M12 28H6V14h6l8-6v24l-8-6Z"/><path d="M26 14c3 2 4 4 4 6s-1 4-4 6" stroke-linecap="round"/>
+            </svg>
+            <h3>Negotiation &amp; Training</h3>
+            <p>From regulatory negotiations to high-stakes commercial talks — trained,
+              rehearsed and supported with our negotiation methodology.</p>
           </li>
           <li class="sector" data-reveal>
-            <svg class="sector__icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v9.5c0 8.3-5.6 13.9-13 17.5C12.6 32.4 7 26.8 7 18.5V9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M14 19.5l4.5 4.5L27 15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3>Factory Compliance</h3>
-            <p>Technical and ESG — factory audits, quality regimes, and environmental, social, and governance standards, end to end.</p>
+            <svg class="sector__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M8 32V16l6-4 6 4v16M20 32V12l7-5 7 5v20" /><path d="M4 32h32" stroke-linecap="round"/><circle cx="26" cy="20" r="2.5"/>
+            </svg>
+            <h3>Factory &amp; ESG Compliance</h3>
+            <p>Technical compliance and ESG readiness at factory level — audited,
+              documented and continuously improved, in China and beyond.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ INDUSTRY 5.0 ============ -->
-    <section class="section section--paper section--flush" id="industry5" aria-labelledby="i5-title">
+    <!-- ══════════ INDUSTRY 5.0 ══════════ -->
+    <section class="section section--tint section--flush" id="industry5" aria-labelledby="i5-title">
       <div class="shell">
-        <div class="i5">
-          <div class="i5__intro" data-reveal>
-            <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>The next shift</p>
-            <h2 id="i5-title">Industry 5.0 puts people back at the centre of the machine</h2>
-            <p>The fourth industrial revolution automated. The fifth collaborates. Industry 5.0 asks a
-              different question — not <em>what can machines do instead of people</em>, but
-              <em>what can they do alongside them</em>. Personalised products, resilient and sustainable
-              operations, and technology that amplifies human judgement rather than replacing it.</p>
-            <p>This is the future our emblem is drawn from — and the direction we help clients move in.</p>
-          </div>
-          <div class="i5__grid" data-reveal>
-            <ul class="i5__principles" role="list">
-              <li><strong>Human-centric</strong><span>Technology serves the worker, never the reverse.</span></li>
-              <li><strong>Personalisation</strong><span>Batch-of-one manufacturing, without losing compliance control.</span></li>
-              <li><strong>Sustainability</strong><span>Circularity and responsibility designed in, not bolted on.</span></li>
-              <li><strong>Collaboration</strong><span>Human and machine each doing what they do best.</span></li>
+        <div class="i5__intro" data-reveal>
+          <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>The next shift</p>
+          <h2 id="i5-title">Industry 5.0 is not more technology.
+            It is technology that respects people.</h2>
+          <p>The fourth industrial revolution optimised machines. The fifth puts the human
+            being back at the centre — and demands that sustainability and resilience are
+            engineered in, not bolted on. That is precisely where compliance knowledge
+            becomes a strategic asset.</p>
+        </div>
+
+        <div class="i5__grid">
+          <ul class="i5__principles" role="list" data-reveal>
+            <li><strong>Human well-being</strong><span>Every system we design keeps the operator,
+              the engineer and the customer at the centre of the loop.</span></li>
+            <li><strong>Sustainability</strong><span>Circular, compliant by design — materials,
+              processes and documentation that stand up to CSRD and beyond.</span></li>
+            <li><strong>Resilience</strong><span>Knowledge doesn't retire with employees;
+              PAQ's AI layer makes institutional memory permanent.</span></li>
+            <li><strong>Human–machine collaboration</strong><span>We deploy technology where it
+              amplifies judgement, never where it replaces accountability.</span></li>
+          </ul>
+
+          <aside class="agi" data-reveal>
+            <p class="eyebrow"><span class="eyebrow__tick"></span>Knowledge infrastructure</p>
+            <h3>The system beneath it all</h3>
+            <p>Every insight from every audit, negotiation and transformation feeds the same
+              knowledge architecture. What we learn once, every client benefits from forever.</p>
+            <ul class="agi__flow" role="list">
+              <li><span class="agi__chip">Capture</span> regulatory intelligence at source</li>
+              <li><span class="agi__chip">Organise</span> it in auditable knowledge graphs</li>
+              <li><span class="agi__chip">Leverage</span> it in every engagement, instantly</li>
             </ul>
-            <aside class="agi" aria-labelledby="agi-title">
-              <p class="eyebrow"><span class="eyebrow__tick"></span>Knowledge infrastructure</p>
-              <h3 id="agi-title">Knowledge AGI databases</h3>
-              <p>Compliance knowledge shouldn't live in inboxes and memory. We build intelligent knowledge
-                systems that capture, organise, and serve regulatory insight at scale — so decisions that
-                once took weeks take minutes.</p>
-              <ul class="agi__flow" role="list">
-                <li><span class="agi__chip">Capture</span> every ruling, standard, and lesson</li>
-                <li><span class="agi__chip">Organise</span> knowledge into a queryable whole</li>
-                <li><span class="agi__chip">Leverage</span> it for fast, data-driven decisions</li>
-              </ul>
-            </aside>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- ============ THE MARK ============ -->
+    <!-- ══════════ THE MARK ══════════ -->
     <section class="section section--navy" id="mark" aria-labelledby="mark-title">
       <div class="shell">
         <div class="section__head" data-reveal>
           <p class="eyebrow"><span class="eyebrow__tick"></span>The mark</p>
           <h2 id="mark-title">One emblem, five commitments</h2>
-          <p class="section__intro">Our logo is a compact of everything we stand for. Read it like a diagram.</p>
+          <p class="section__intro">Our logo is a compact of everything we stand for.
+            Read it like a diagram.</p>
         </div>
+
         <div class="mark">
           <figure class="mark__emblem" data-reveal>
-            <img src="assets/logo.png" alt="The PAQ-Consultancy emblem" width="460" height="460">
+            <img src="PAQC logo.jpeg"
+                 alt="The PAQ emblem in its full colour composition"
+                 width="560" height="560">
           </figure>
-          <ul class="mark__legend" role="list">
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="7" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M20 4v6M20 30v6M4 20h6M30 20h6M9 9l4.2 4.2M26.8 26.8L31 31M31 9l-4.2 4.2M13.2 26.8L9 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <ul class="mark__legend" role="list" data-reveal>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <circle cx="20" cy="20" r="6"/><path d="M20 6v5M20 29v5M6 20h5M29 20h5M10 10l3.5 3.5M26.5 26.5 30 30M30 10l-3.5 3.5M13.5 26.5 10 30"/>
+              </svg>
               <div><h3>The gear</h3><p>Industrial precision — engineered thinking applied to regulation.</p></div>
             </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M8 34c0-6 5-10 12-10s12 4 12 10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <circle cx="20" cy="12" r="5"/><path d="M10 34c0-7 4-11 10-11s10 4 10 11" stroke-linecap="round"/>
+              </svg>
               <div><h3>The human figure</h3><p>Human-centric values — Industry 5.0's person at the centre.</p></div>
             </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><circle cx="9" cy="20" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="31" cy="9" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="31" cy="31" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12.4 20h10M22.4 20L28 12M22.4 20L28 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <circle cx="10" cy="10" r="3"/><circle cx="30" cy="10" r="3"/><circle cx="20" cy="28" r="3"/><path d="M13 11.5 17.5 25M27 11.5 22.5 25M13 10h14"/>
+              </svg>
               <div><h3>The circuits</h3><p>Technological integration — data and systems behind every answer.</p></div>
             </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5a15 15 0 0 1 13 7.7M20 35A15 15 0 0 1 7 27.3" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M33 5v8h-8M7 35v-8h8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div><h3>The circular arrows</h3><p>Continuous compliance cycles — regulation never ends; neither does vigilance.</p></div>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M32 16a13 13 0 0 0-24-3M8 24a13 13 0 0 0 24 3" stroke-linecap="round"/><path d="M31 8v8h-8M9 32v-8h8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div><h3>The circular arrows</h3><p>Continuous compliance cycles — regulation never ends;
+                neither does vigilance.</p></div>
             </li>
-            <li class="mark__item" data-reveal>
-              <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true"><path d="M30 6C16 6 8 14 8 28c0 3 .5 5 1.2 6C12 32 30 28 30 6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 31c4-8 9-13 16-17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-              <div><h3>The leaf</h3><p>Sustainability — growth that doesn't borrow from the future.</p></div>
+            <li class="mark__item">
+              <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M20 34C20 34 7 27 7 15c5-2 10 0 13 4 3-4 8-6 13-4 0 12-13 19-13 19Z" stroke-linejoin="round"/>
+              </svg>
+              <div><h3>The green leaf</h3><p>Sustainability — the future of compliance is environmental
+                as well as technical.</p></div>
             </li>
           </ul>
         </div>
 
         <div class="palette" data-reveal>
-          <p class="palette__label">Four colours, four signals</p>
+          <p class="palette__label">The palette — precision in colour</p>
           <ul class="palette__chips" role="list">
-            <li><span class="chip chip--navy"></span><strong>Deep navy</strong><span>authority &amp; trust</span></li>
-            <li><span class="chip chip--teal"></span><strong>Teal</strong><span>technological innovation</span></li>
-            <li><span class="chip chip--green"></span><strong>Green</strong><span>sustainability &amp; growth</span></li>
-            <li><span class="chip chip--steel"></span><strong>Steel blue</strong><span>professional balance</span></li>
+            <li><span class="chip chip--navy" role="img" aria-label="Deep navy swatch"></span><strong>Deep Navy</strong><span>Trust &amp; governance</span></li>
+            <li><span class="chip chip--teal" role="img" aria-label="Teal to blue gradient swatch"></span><strong>Teal&nbsp;→&nbsp;Blue</strong><span>Technology &amp; data</span></li>
+            <li><span class="chip chip--green" role="img" aria-label="Green gradient swatch"></span><strong>Green</strong><span>Sustainability</span></li>
+            <li><span class="chip chip--steel" role="img" aria-label="Steel blue swatch"></span><strong>Steel</strong><span>Industry &amp; structure</span></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ══════════ CONTACT ══════════ -->
     <section class="section section--paper" id="contact" aria-labelledby="contact-title">
       <div class="shell">
         <div class="contact">
           <div class="contact__intro" data-reveal>
             <p class="eyebrow eyebrow--dark"><span class="eyebrow__tick"></span>Contact</p>
-            <h2 id="contact-title">Start a conversation</h2>
-            <p>Tell us what you're building and which markets it needs to reach. We'll come back with a
-              clear view of what compliance looks like for you.</p>
+            <h2 id="contact-title">Let's make compliance your advantage</h2>
+            <p>Tell us where you operate and what you make. We'll come back with
+              a first read on your compliance landscape — precise, honest, actionable.</p>
             <address class="contact__details">
               <a href="mailto:info@paqc.biz">info@paqc.biz</a>
-              <span>Serving clients internationally</span>
+              <span>Consultations in English, German &amp; Chinese</span>
             </address>
           </div>
+
           <form class="contact__form" data-contact-form data-reveal>
             <div class="field">
               <label for="f-name">Name</label>
@@ -319,43 +359,46 @@
               <label for="f-sector">Area of interest</label>
               <select id="f-sector" name="sector">
                 <option value="">Select…</option>
-                <option>Consumer Products</option>
-                <option>AIG / AI / RAG Infrastructure</option>
-                <option>Industry 4.0 / 5.0</option>
-                <option>Negotiation Training</option>
-                <option>Factory Compliance (Technical or ESG)</option>
+                <option>Consumer products &amp; compliance</option>
+                <option>AI/RAG knowledge systems</option>
+                <option>Industry 4.0 → 5.0 transformation</option>
+                <option>Negotiation &amp; training</option>
+                <option>Factory &amp; ESG compliance</option>
+                <option>Something else</option>
               </select>
             </div>
             <div class="field field--full">
-              <label for="f-msg">What are you working on?</label>
-              <textarea id="f-msg" name="message" rows="4" required></textarea>
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="4" required></textarea>
             </div>
             <button class="btn btn--primary contact__submit" type="submit">Send enquiry</button>
-            <p class="contact__note" data-form-note hidden>Opening your email client…</p>
+            <p class="contact__note" data-form-note hidden>Opening your email client —
+              if nothing happens, write to <a href="mailto:info@paqc.biz">info@paqc.biz</a> directly.</p>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ══════════ FOOTER ══════════ -->
   <footer class="footer">
     <div class="shell footer__inner">
       <a class="footer__brand" href="#top">
-        <img src="assets/logo-512.png" alt="" width="34" height="34">
+        <img src="assets/logo-512.png" alt="" width="28" height="28">
         <span>PAQ·Consultancy Ltd</span>
       </a>
-      <nav class="footer__links" aria-label="Footer">
+      <nav class="footer__links" aria-label="Footer navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#areas">Practice areas</a>
         <a href="#industry5">Industry 5.0</a>
+        <a href="#mark">The Mark</a>
         <a href="#contact">Contact</a>
       </nav>
-      <p class="footer__legal">© 2026 PAQ-Consultancy Ltd. Precision compliance for the next industrial era.</p>
+      <p class="footer__legal">© 2026 PAQ-Consultancy Ltd — System Compliance, engineered.</p>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
