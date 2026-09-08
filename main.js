@@ -47,12 +47,14 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const data = new FormData(form);
-      const subject = `Enquiry from ${data.get('name') || 'website visitor'}${data.get('sector') ? ' — ' + data.get('sector') : ''}`;
+      const subject = `Enquiry from ${data.get('name') || 'website visitor'}${data.get('interest') ? ' — ' + data.get('interest') : ''}`;
       const body = [
         `Name: ${data.get('name') || ''}`,
         `Company: ${data.get('company') || ''}`,
         `Email: ${data.get('email') || ''}`,
-        `Area of interest: ${data.get('sector') || ''}`,
+        `Interested in: ${data.get('interest') || ''}`,
+        `Product category: ${data.get('category') || ''}`,
+        `Target market(s): ${data.get('markets') || ''}`,
         '',
         data.get('message') || '',
       ].join('\n');
